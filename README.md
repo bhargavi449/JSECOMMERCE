@@ -26,3 +26,19 @@ create div.product
 add .product-image, .product-name, .product-brand, .product-price
 style ul.products and internal divs
 duplicate 2 times to show 3 products
+
+4.Render Dynamic Home Screen
+
+create data.js
+export an array of 6 products
+create screens/HomeScreen.js
+export HomeScreen as an object with render() method
+implement render()
+import data.js
+return products mapped to lis inside an ul
+create app.js
+link it to index.html as module
+set main id to main-container
+create router() function
+set main_container innerHTML to HomeScreen.render()
+set load event of window to router() function
