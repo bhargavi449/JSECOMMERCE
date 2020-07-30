@@ -54,3 +54,14 @@ set request as parseRequestURL()
 build parsedUrl and compare with routes
 if route exists render it, else render Error404
 create screens/Error404.js and render error message
+
+6.Create Node.JS Server
+run npm init in root jsamazona folder
+npm install express
+create server.js
+add start command as node backend/server.js
+require express
+move data.js from frontend to backend
+create route for /api/products
+return products in data.js
+run npm start
