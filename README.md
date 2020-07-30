@@ -72,3 +72,29 @@ make render async
 fetch products from '/api/products' in render()
 make router() async and call await HomeScreen.render()
 use cors on backend
+
+webpack:To manage js files and merge them inside one single js file to
+serve by webserver.
+if you use webpack --> In network --> js --> we have only one file.
+otherwise we have some many files.
+benefits:
+
+---
+
+1.It increase speed
+2.npm packages
+
+axios: Its a ajax request tool
+
+8.Add Webpack
+cd frontend
+npm install -D webpack webpack-cli webpack-dev-server
+npm uninstall live-server
+"start": "webpack-dev-server --mode development --watch-content-base --open"
+move index.html, style.css and images to frontend folder
+rename app.js to index.js
+update index.html
+add <script src="main.js"></script> before
+npm start
+npm install axios
+change fetch to axios in HomeScreen
