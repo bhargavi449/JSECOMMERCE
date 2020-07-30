@@ -4,7 +4,7 @@
   "description": "1.)Create Folder Structure\r create root folder as jsecommerce\r add frontend and backend folder\r create src folder in frontend\r create index.html with heading jsecommerce in src\r run npm init in frontend folder\r npm install live-server\r add start command as live-server src --verbose\r run npm start\r check result",
   "main": "index.js",
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "nodemon --watch backend --exec babel-node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,11 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4"
   }
 }
