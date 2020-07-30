@@ -1,0 +1,23 @@
+{
+  "name": "jsecommerce",
+  "version": "1.0.0",
+  "description": "1.)Create Folder Structure\r create root folder as jsecommerce\r add frontend and backend folder\r create src folder in frontend\r create index.html with heading jsecommerce in src\r run npm init in frontend folder\r npm install live-server\r add start command as live-server src --verbose\r run npm start\r check result",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhargavi449/jsecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhargavi449/jsecommerce/issues"
+  },
+  "homepage": "https://github.com/bhargavi449/jsecommerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
